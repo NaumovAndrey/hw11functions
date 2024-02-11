@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-//Реализовать шифр Цезаря.
+//Implement the Caesar cipher.
 
 std::string encrypt_caesar(const std::string& message, int shift) {
     std::string result = "";
@@ -30,17 +30,17 @@ int main() {
     int shift;
     std::string message;
 
-    std::cout << "Введите сообщение: ";
+    std::cout << "Enter a message: ";
     std::getline(std::cin, message);
 
-    std::cout << "Введите сдвиг: ";
+    std::cout << "Enter the shift: ";
     std::cin >> shift;
 
     std::string encrypted = encrypt_caesar(message, shift);
     std::string decrypted = decrypt_caesar(encrypted, shift);
 
-    std::cout << "Зашифрованное сообщение: " << encrypted << std::endl;
-    std::cout << "Расшифрованное сообщение: " << decrypted << std::endl;
+    std::cout << "Encrypted message: " << encrypted << std::endl;
+    std::cout << "Decrypted message: " << decrypted << std::endl;
 
     return 0;
 }
