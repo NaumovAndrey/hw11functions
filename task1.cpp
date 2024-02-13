@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "conio.h"
 
 //Implement the Caesar cipher.
 
@@ -42,5 +43,6 @@ int main() {
     std::cout << "Encrypted message: " << encrypted << std::endl;
     std::cout << "Decrypted message: " << decrypted << std::endl;
 
+    _getch();
     return 0;
 }
